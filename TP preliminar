@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Img/recycle-sign.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css"> 
+    <title>MAR DEL PLASTICO</title>
+</head>
+<body>
+    <div class="cuadrado">
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, sit? Ipsa ipsum repellat aperiam corporis asperiores suscipit laudantium, quasi, deleniti sit iusto cupiditate quaerat tempore eaque similique vitae possimus eveniet.</p>
+    </div>
+    <header>
+        <a id="arriba"></a>
+        <img src="Img/recycle-sign.png" alt="logo" width="2.5%">
+        <h1>MAR<span>DEL</span>PLASTICO</h1>
+        <h2>que juntes es mejor</h2>
+        <nav>
+            <ul>
+                <li><a href="tp.html">Inicio</a></li>
+                <li><a href="Quienes somos.html">Quienes somos</a></li>
+                <li><a href="Puntos verdes.html">Puntos verdes</a></li>
+                <li><a href="Registrate.html">Registro</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section class="section-1">
+            <h3>Reciclá</h3>
+        </section>
+        <section>
+            <h2 id="com-1">Comencemos a reciclar</h2>
+            <p>Bienvenidos a <b>Aprendamos a reciclar</b>juntosSabemos que si estas en esta pagina es por algo, asi que no mas excusas y aprendamos a reciclar</p>
+            <p>En <b>Aprendamos a reciclar</b> juntos entendemos la importancia de conocer los impactos negativos que surgen de la produccion </p>
+
+            <h3>Motivos para reciclar:</h3>
+            <ol>
+                <li>Reducir el impacto ambiental del plastico en nuestros oceanos</li>
+                <li>Reutilizando material</li>
+                <li>Reduccion de la basura </li>
+            </ol>
+        </section>
+        <hr>
+    <section class="section-1">
+        <h3>Puntos de reciclaje en tu ciudad</h3>
+        <article>
+            <a href="Img/images.jpeg" target="_blank" title="Ver más grande">
+            <img src="Img/images.jpeg" alt=""></a>
+        </article>
+    </section>
+    </main>
+    <hr>
+    <footer>
+        <a href="mailto:reciclemosjuntos@mail.com" target="_blank"><img src="Img/gmail.png" alt="logo email" width="2%">
+        </a>
+        <a href="https://www.facebook.com" target="_blank"><img src="Img/facebook.png" alt="logo email" width="2%">
+        </a>
+        <a href="https://www.instagram.com" target="_blank"><img src="Img/instagram.png" alt="logo email" width="2%">
+        </a>
+        <a href="https://www.twitter.com" target="_blank"><img src="Img/gorjeo.png" alt="logo email" width="2%">
+        </a>
+        <br>
+        <a href="#arriba">🔼</a>
+
+
+    </footer>
+</body>
+</html>
