@@ -20,11 +20,11 @@
     <hr>
     <nav>
         <ul>
-            <li><a href="tp.html">Inicio</a></li>
-            <li><a href="Quienes somos.html">Quienes somos</a></li>   
-            <li><a href="Puntos verdes.html">Puntos verdes</a></li>
-            <li><a href="Registrate.html">Registrate</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="quienes_somos.html">Quienes somos</a></li>   
+            <li><a href="puntos_verdes.html">Puntos verdes</a></li>
+            <li><a href="registrate.html">Registrate</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
     <main>
