@@ -46,10 +46,7 @@
         <hr>
         <section class="section-1">
             <h3>Puntos de reciclaje en tu ciudad</h3>
-            <article>
-                <a href="Img/images.jpeg" target="_blank" title="Ver más grande">
-                <img src="Img/images.jpeg" alt=""></a>
-            </article>
+            <iframe src="https://www.google.com/maps/d/embed?mid=16yUET84Eo9KW1IIUhj_ejwI3abnWQ_n9" width="50%" height="480"></iframe>
         </section>
     </main>
     <hr>
