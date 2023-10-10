@@ -16,17 +16,17 @@
         <img src="Img/recycle-sign.png" alt="logo" width="2.5%">
         <h1>MAR DEL PLASTICO</h1>
         <h2>que juntes es mejor</h2>
-        <nav>
-            <ul>
-                <li><a href="tp.html">Inicio</a></li>
-                <li><a href="Quienes somos.html">Quienes somos</a></li>
-                <li><a href="Puntos verdes.html">Puntos verdes</a></li>
-                <li><a href="Registrate.html">Registro</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
     <hr>
+    <nav>
+        <ul>
+            <li><a href="tp.html">Inicio</a></li>
+            <li><a href="Quienes somos.html">Quienes somos</a></li>   
+            <li><a href="Puntos verdes.html">Puntos verdes</a></li>
+            <li><a href="Registrate.html">Registro</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="section-1">
             <h3>Reciclá</h3>
