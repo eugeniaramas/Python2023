@@ -17,18 +17,39 @@
         <h1>Registrate acá</h1>
         <h3>Ayudanos a cambiar tu mundo y el nuestro</h3>
     </header>
-    <form action="/action_page.php" method="get">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre"><br><br>
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido"><br><br>
-        <label for="domicilo">Domicilo:</label>
-        <input type="text" id="domicilio" name="domicilio"><br><br>
-        <label for="Localidad">Localidad:</label>
-        <input type="text" id="localidad" name="localidad"><br><br>
-        <label for="mail">Mail:</label>
-        <input type="email" id="mail" name="mail"><br><br>
-        <button type="submit">Enviar datos</button>
-      </form>
+<form action="show_data.html" target="_blank">
+        <label for="firstname">Nombre: </label><input size="30" type="text" name="firstname"
+            placeholder="Ingrese su nombre aqui..."> <br><br>
+        <label for="lastname">Apellido:</label><input size="30" type="text" name="lastname"
+            placeholder="Ingrese su apellido aqui..."> <br><br>
+        <label for="street">Direccion:</label><input type="text" name="address"
+            placeholder="Ingrese su dirección aqui..."> <br><br>
+        <label for="number">Numero:</label><input type="number" name="number" placeholder="Ingrese el numero..">
+        <br><br>
+        <label for="city">Ciudad: </label><input type="text" name="city" value="C.A.B.A."> <br><br>
+        <label for="zipcode">Código Postal:</label><input type="text" name="zipcode"
+            placeholder="Ingrese su codigo postal aqui..."> <br> <br>
+        <label for="telefono">Telefono: </label><input type="tel" name="telefono"
+            placeholder="ingrese su telefono aqui ...."> <br><br>
+        <label for="BirthDate">Fecha Nac.(mm/dd/yyyy): </label> <input type="date" name="birthdate"> <br><br>
+        <label for="mail">Mail: </label><input type="email" name="mail"> <br><br>
+        
+        <p>Género (Radio)
+            <input type="radio" name="gender" value="hombre" checked>Hombre
+            <input type="radio" name="gender" value="Mujer">Mujer
+            <input type="radio" name="gender" value="Otro"> No binario
+        </p>
+        <p> Deseas recibir información?
+            <input type="checkbox" name="opciones" value="SI"> SI
+            <input type="checkbox" name="opciones" value="Luego"> Tal vez luego
+            <input type="checkbox" name="opciones" value="NO"> NO
+        <br><br>
+
+        <label for="comentarios">Comentarios:<br></label> <textarea name="comentarios" rows="10" cols="30"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <button type="reset">Reset</button>
+    </form>
+
 </body>
 </html>
