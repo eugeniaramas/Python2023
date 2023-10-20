@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Img/recycle-sign.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css"> 
+    <title>MAR DEL PLASTICO</title>
+</head>
+<body>
+   
+    <img src="Img/Mar del plata.avif" alt="logo" width="20%">
+ 
+    <header>
+        <a id="arriba"></a>
+        <h1>MAR<span>DEL</span>PLASTICO</h1>
+        <h2>Activemos en la lucha de un Mar sin Plástico</h2>
+        <nav>
+            <ul>
+                <li><a href="tp.html">Inicio</a></li>
+                <li><a href="Quienes somos.html">Quienes somos</a></li>
+                <li><a href="Puntos verdes.html">Puntos verdes</a></li>
+                <li><a href="Registrate.html">Registro</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+      <section>
+        <h2>¿Quienes somos?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dicta animi aspernatur ut mollitia neque maiores consequuntur pariatur quae reiciendis magni voluptatum, ipsum ex nemo odio magnam harum similique tempora.</p>
+
+        <h3>Mision y compromiso</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, deleniti, perferendis ratione voluptas quae accusantium quo, cum facere tempore placeat doloribus necessitatibus repellat saepe asperiores consequuntur delectus. Soluta, doloribus asperiores!</p>
+
+        <h3>Proyectos a futuro</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi doloremque ipsum voluptatum non. Exercitationem ut hic eveniet debitis inventore ullam nisi est ipsa numquam nobis soluta quo, animi harum blanditiis!</p>
+
+        </section>
+
+        <hr>
+
+        <section>
+        <h2>Opiniones de los voluntarios</h2>
+        
+        <h4>Agustin</h4>
+            <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officia animi asperiores distinctio eaque deleniti perferendis facere rerum obcaecati aut, qui voluptate sunt? Suscipit consectetur beatae dolorem ab recusandae! Fugit.</i></p>
+        
+
+        <h4>Marisa</h4>
+            <p><i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, voluptate! Odit, ipsam? Laboriosam quasi ad cumque mollitia ut consequatur odio animi facere voluptas commodi quam dignissimos, sit illum iusto impedit!</i</p>>
+        
+                
+        <h4>Luciana </h4>
+    
+            <p><i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, voluptate! Odit, ipsam? Laboriosam quasi ad cumque mollitia ut consequatur odio animi facere voluptas commodi quam dignissimos, sit illum iusto impedit!</i</p>>
+    
+        
+        
+
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <a href="mailto:reciclemosjuntos@mail.com" target="_blank"><img src="Img/gmail.png" alt="logo email" width="2%">
+        </a>
+        <a href="https://www.facebook.com" target="_blank"><img src="Img/facebook.png" alt="logo email" width="2%">
+        </a>
+        <a href="https://www.instagram.com" target="_blank"><img src="Img/instagram.png" alt="logo email" width="2%">
+        </a>
+        <a href="https://www.twitter.com" target="_blank"><img src="Img/gorjeo.png" alt="logo email" width="2%">
+        </a>
+        <br>
+        <a href="#arriba">🔼</a>
+
+
+    </footer>
+</body>
+</html>
