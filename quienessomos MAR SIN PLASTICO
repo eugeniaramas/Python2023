@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/recycle-sign.png" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+    
+    <title>MAR SIN PLASTICO</title>
+</head>
+
+<body>
+    <input type="checkbox" id="boton-modo">
+    <label for="boton-modo">Modo Oscuro</label>
+    
+    <div class="contenedor">
+        <header id="idheader" class="header">
+        </header>
+        
+        <main class="contenido">
+           <h1><b>¿Quienes somos?</b></h1> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dicta animi aspernatur ut mollitia neque maiores consequuntur pariatur quae reiciendis magni voluptatum, ipsum ex nemo odio magnam harum similique tempora.
+            
+            <br><br>
+           
+            <p>Mision y compromiso
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, deleniti, perferendis ratione voluptas quae accusantium quo, cum facere tempore placeat doloribus necessitatibus repellat saepe asperiores consequuntur delectus. Soluta, doloribus asperiores!</p> Mision y compromiso
+           
+            <br><br>
+            
+            <p>Proyectos a futuro
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi doloremque ipsum voluptatum non. Exercitationem ut hic eveniet debitis inventore ullam nisi est ipsa numquam nobis soluta quo, animi harum blanditiis!</p>
+        </main>
+
+        <aside class="sidebar">
+            <h3>SIDEBAR</h3>
+        </aside>
+
+        <div class="widget-1">
+            <h3>WIDGET1</h3>
+        </div>
+        <div class="widget-2">
+            <h3>WIDGET2</h3>
+        </div>
+
+        <footer id="idfooter" class="footer">
+            <h3>pie</h3></footer>
+
+        <script src="practicascript.js"></script>
+
+        
+
+        
+    
+
+    </div>
+    
+</body>
+</html>
