@@ -1,52 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://fontawesome.com/icons/recycle?f=classic&s=solid" type="image/x-icon">
+    <link rel="shortcut icon" href="Img/recycle-sign.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Registrate</title>
+    <title>MAR DEL PLASTICO</title>
 </head>
 <body>
-    <div class="cuadrado">
-        <p>“Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, puede cambiar el mundo” -Eduardo Galeano-</p>
-    </div>
+    <img src="Img/Mar del plata.avif" alt="logo" width="20%">
     <header>
         <a id="arriba"></a>
-        <img src="Img/recycle-sign.png" alt="logo" width="2.5%">
-        <h1>Registrate acá</h1>
-        <h3>Ayudanos a cambiar tu mundo y el nuestro</h3>
+        <h1>MAR<span>DEL</span>PLASTICO</h1>
+        <h2>Activemos en la lucha de un Mar sin Plástico</h2>
+        <nav>
+            <ul>
+                <li><a href="tp.html">Inicio</a></li>
+                <li><a href="Quienes somos.html">Quienes somos</a></li>
+                <li><a href="Puntos verdes.html">Puntos verdes</a></li>
+                <li><a href="Registrate.html">Registro</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-<form action="show_data.html" target="_blank">
-        <label for="firstname">Nombre: </label><input size="30" type="text" name="firstname"
-            placeholder="Ingrese su nombre aqui..."> <br><br>
-        <label for="lastname">Apellido:</label><input size="30" type="text" name="lastname"
-            placeholder="Ingrese su apellido aqui..."> <br><br>
-        <label for="street">Direccion:</label><input type="text" name="address"
-            placeholder="Ingrese su dirección aqui..."> <br><br>
-        <label for="number">Numero:</label><input type="number" name="number" placeholder="Ingrese el numero..">
-        <br><br>
-        <label for="city">Ciudad: </label><input type="text" name="city" value="Mar del plata"> <br><br>
-        <label for="zipcode">Código Postal:</label><input type="text" name="zipcode"
-            placeholder="Ingrese su codigo postal aqui..."> <br> <br>
-        <label for="telefono">Telefono: </label><input type="tel" name="telefono"
-            placeholder="ingrese su telefono aqui ...."> <br><br>
-        <label for="BirthDate">Fecha Nac.(mm/dd/yyyy): </label> <input type="date" name="birthdate"> <br><br>
-        <label for="mail">Mail: </label><input type="email" name="mail"> <br><br>
-        <p>Género
-            <input type="radio" name="gender" value="Mujer" checked>Mujer
-            <input type="radio" name="gender" value="hombre">Hombre
-            <input type="radio" name="gender" value="Otro"> No binario
-        </p>
-        <p> Deseas recibir información?
-            <input type="checkbox" name="opciones1" value="SI" checked> SI
-            <input type="checkbox" name="opciones2" value="NO"> No por el momento</p>
-        <br>
-        <label for="comentarios">Comentarios:<br></label> <textarea name="comentarios" rows="10" cols="30"></textarea>
-        <br><br>
-        <input type="submit" value="Enviar">
-        <button type="reset">Reset</button>
-    </form>
+    <hr>
+    <main>
+       <section>
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nom">Nombre: *</label>
+                <input type="text" name="nom" id="nom" maxlength="30" required> <br>
+                <label for="ape">Apellido: *</label>
+                <input type="text" name="ape" id="ape" maxlength="30" required> <br>
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad" min="0" max="100">
+                <br><br>
+                <label for="fecnac">Fecha de nacimiento:</label>
+                <input type="date" name="fecnac" id="fecnac">
+                <label for="Barrio">Barrio: </label>
+                <select name="Barrio" id="Barrio">
+                    <option value="1">Parque luro</option>
+                    <option value="2">Constitucion</option>
+                    <option value="3">La Perla</option>
+                    <option value="4">Las Dalias</option>
+                    <option value="5">Camet</option>
+                    <option value="6">El Faro</option>
 
+                </select>
+                <p>* Campos obligatorios</p>
+            </fieldset>
+            <fieldset>
+                <legend>Datos del contacto e intereses</legend>
+                <label for="correo">E-mail: *</label>
+                <input type="email" name="correo" id="correo" placeholder="mardelplastico@gmail.com" required> <br>
+                <label for="tel">Celular: *</label>
+                <input type="number" name="tel" id="tel" required>
+                <br>
+                <label for="intereses">Tengo interés en:</label>
+                <input type="checkbox" name="intereses1" value="1">Ser voluntario
+                <input type="checkbox" name="intereses2" value="2">Armado de ecobotellas
+                <input type="checkbox" name="intereses3" value="3">Compostaje
+                <label for="rb">¿Te gustaria tener mas informacion a cerca de...?</label>
+                <input type="radio" name="rb" value="1">Reciclaje
+                <input type="radio" name="rb" value="2">Ecobotellas
+                <input type="radio" name="rb" value="3">Compostaje
+                <input type="radio" name="rb" value="4">Puntos verdes
+                <br>
+            </fieldset>
+
+            <input type="checkbox" name="condiciones" id="condiciones"> Acepto recibir novedades a traves del correo electronico
+            <br><br>
+            <input type="submit" value="Enviar datos">
+            <input type="reset" value>
+        </form>
+       </section>
+    </main>
+    <hr>
+    <footer>
+        <a href="mailto:reciclemosjuntos@mail.com" target="_blank"><img src="Img/gmail.png" alt="logo email" width="2%">
+        </a>
+        <a href="https://www.facebook.com" target="_blank"><img src="Img/facebook.png" alt="logo email" width="2%">
+        </a>
+        <a href="https://www.instagram.com" target="_blank"><img src="Img/instagram.png" alt="logo email" width="2%">
+        </a>
+        <a href="https://www.twitter.com" target="_blank"><img src="Img/gorjeo.png" alt="logo email" width="2%">
+        </a>
+        <br>
+        <a href="#arriba">🔼</a>
+
+
+    </footer>
 </body>
 </html>
