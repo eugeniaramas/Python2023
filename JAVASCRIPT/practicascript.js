@@ -1,15 +1,15 @@
 let header = `
 <h2>MAR SIN PLASTICO</h2>
-<nav> 
-    <a class="boton" href="Tp con grid.html">Inicio</a> 
-    <a class="boton" href="quienessomos.html">Quienes somos</a>
+<nav>
+    <a class="boton" href="Tp con grid.html">Inicio</a>
+    <a class="boton" href="quienes_somos.html">Quienes somos</a>
     <a class="boton" href="nuestrosobjetivos.html">Nuestros Objetivos</a>
     <a class="boton" href="puntosverdes.html">Puntos Verdes</a>
     <a class="boton" href="contacto.html">Contacto</a>
-    
+
 
 </nav>
-` 
+`
 document.getElementById("idheader").innerHTML = header
 
 
