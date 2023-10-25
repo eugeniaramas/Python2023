@@ -1,0 +1,19 @@
+*{
+    margin: 2px;;
+    padding: 3px;
+}
+body{
+    background: #e9ecf4;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+    background-color:rgba(133, 122, 255, 0.391);
+}
+div {
+    border: 1px solid black;
+    padding-bottom: 5px;
+    background-color: rgb(173, 196, 230);
+}
