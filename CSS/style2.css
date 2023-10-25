@@ -49,14 +49,14 @@ body{
 }
 
 .contenedor .sidebar{
-    grid-column: 3 / 4 ;
     background: #5889f3;
     text-align: center;
-    display: flex;
-    /*align-items: center;*/
+    display: list-item;
+    align-items: center;
     justify-content: center;
     min-height: 100px;
     grid-area: sidebar;
+    gap: 20px
   }
 
 .contenedor .widget-1,
