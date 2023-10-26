@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../IMG/recycle-sign.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/style2.css">
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
     <title>MAR SIN PLASTICO</title>
 </head>
 
@@ -58,6 +59,20 @@
                 <a href="">Ecobotellas</a><br>
                 <a>Que son? Para que sirven? Que utilidad les puedo dar? De que manera ayuda al medio ambiente?</a>
                 <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+            </article>
+            <article>
+                <h4>Libro de consulta</h4>
+                    <div id="viewerCanvas" style="width: 400px; height: 600px;"></div>
+                    <script type="text/javascript">
+                        google.books.load();
+                
+                        function initialize() {
+                            var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+                            viewer.load('ISBN:9688382302');
+                        }
+                
+                        google.books.setOnLoadCallback(initialize);
+                    </script>
             </article>
         </aside>
 
