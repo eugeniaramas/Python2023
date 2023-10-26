@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../IMG/recycle-sign.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/style2.css">
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
     <title>MAR SIN PLASTICO</title>
 </head>
 
@@ -49,32 +50,17 @@
             <br><br>
             <article>
                 <a>Búsqueda de libros</a>
-                <script src="https://apis.google.com/js/api.js"></script>
-                <script>
-                function start() {
-                  // 2. Initialize the JavaScript client library.
-                  gapi.client.init({
-                    'apiKey': 'YOUR_API_KEY',
-                    // Your API key will be automatically added to the Discovery Document URLs.
-                    'discoveryDocs': ['https://people.googleapis.com/$discovery/rest'],
-                    // clientId and scope are optional if auth is not required.
-                    'clientId': 'YOUR_WEB_CLIENT_ID.apps.googleusercontent.com',
-                    'scope': 'profile',
-                  }).then(function() {
-                    // 3. Initialize and make the API request.
-                    return gapi.client.people.people.get({
-                      'resourceName': 'people/me',
-                      'requestMask.includeField': 'person.names'
-                    });
-                  }).then(function(response) {
-                    console.log(response.result);
-                  }, function(reason) {
-                    console.log('Error: ' + reason.result.error.message);
-                  });
-                };
-                // 1. Load the JavaScript client library.
-                gapi.load('client', start);
-                </script>
+                    <div id="viewerCanvas" style="width: 400px; height: 600px;"></div>
+                    <script type="text/javascript">
+                        google.books.load();
+                
+                        function initialize() {
+                            var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+                            viewer.load('ISBN:9688382302');
+                        }
+                
+                        google.books.setOnLoadCallback(initialize);
+                    </script>
             </article>
         </aside>
 
