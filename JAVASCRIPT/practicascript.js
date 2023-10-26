@@ -22,10 +22,9 @@ let header = `
     <a class="boton" href="quienes_somos.html">Quienes somos</a>
     <a class="boton" href="nuestrosobjetivos.html">Nuestros Objetivos</a>
     <a class="boton" href="puntosverdes.html">Puntos Verdes</a>
-    <a class="boton" href="contacto.html">Contacto</a>
     <a class="boton" href="Registrate.html">Registrate</a>
 
-
+    <a id="arriba"></a>
 </nav>
 `
 document.getElementById("idheader").innerHTML = header
@@ -43,6 +42,7 @@ let footer = `
         <br>
         <p>Derechos reservados @2023</p>
         <a href="#arriba">🔼</a>
+        
 `
 document.getElementById("idfooter").innerHTML = footer
 

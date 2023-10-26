@@ -86,12 +86,27 @@
         </aside>
 
         <div class="widget-1">
-            <h3>WIDGET1</h3>
+            <h3>Si queres contactarte con nosotros, no dudes en escribirnos.</h3>
+            <section class="contacto">
+                <br>
+                <form action="contacto">
+                     <label for="nom">Nombre: *</label>
+                    <input type="text" name="nom" id="nom" maxlength="30" required> <br>
+                    <label for="ape">Apellido: *</label>
+                    <input type="text" name="ape" id="ape" maxlength="30" required> <br>
+                    <label for="correo">E-mail: *</label>
+                    <input type="email" name="correo" id="correo" placeholder="marsinplastico@example.com" required> <br>
+                    <label for="comentarios">Escriba su consulta: *</label>
+                    <br>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" required placeholder="Escriba su consulta..."></textarea>
+                    <p>* Campos obligatorios</p>
+                    <br><br>
+                    <input type="submit" value="Enviar datos">
+                    <input type="reset" value="Borrar datos">
+                </form>
+             </section>
         </div>
-        <div class="widget-2">
-            <h3>WIDGET2</h3>
-        </div>
-
+     
         <footer id="idfooter" class="footer">
             <h3>pie</h3></footer>
 

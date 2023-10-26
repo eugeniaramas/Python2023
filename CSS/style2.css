@@ -22,7 +22,7 @@ body{
 
     grid-template-areas: "header header header"
                          "contenido contenido sidebar"
-                         "widget-1 widget-2 sidebar"
+                         "widget-1 widget-1 sidebar"
                          "footer footer footer"
 }
 
@@ -61,11 +61,11 @@ body{
     gap: 20px
   }
 
-.contenedor .widget-1,
-.contenedor .widget-2 {
+.contenedor .widget-1
+/*.contenedor .widget-2*/ {
     background: #106675;
     color: white;
-    height: 15vw;
+    height: 30vw;
     text-align: center;
     display: flex;
     align-items: center;
@@ -77,10 +77,10 @@ body{
     grid-area: widget-1;
 }
 
-.contenedor .widget-2{
+/*.contenedor .widget-2{
     grid-area: widget-2;
 
-}
+}*/
 
 .contenedor .caja{
      background-color: lightgreen;
@@ -90,7 +90,9 @@ body{
     
     
 }
-
+.contenedor .widget-1 .contacto{
+    width: 50%;
+}
 .contenedor .footer{
     background: #12203e;
     color: white;
