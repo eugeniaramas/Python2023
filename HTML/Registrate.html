@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../IMG/recycle-sign.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style2.1.css">
+    
+    <title>MAR SIN PLASTICO</title>
+</head>
+
+<body>
+    <input type="checkbox" id="boton-modo">
+    <label for="boton-modo">Modo Oscuro</label>
+    
+    <div class="contenedor">
+        <header id="idheader" class="header">
+            <a id="arriba"></a>
+        </header>
+
+        <main class="contenido">
+           <h1>Registrate y sé parte del cambio        
+           </h1> 
+           <br><br>
+           <p>Si soñas con un mundo mejor, unite a nuestro equipo
+            <br>Nuestro hogar, Nuestra casa
+           </p>
+           <br><br>
+
+           <section>
+            <form action="" class="formulario" id="formulario">
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <div class="formulario__grupo" id="grupo__usuario">
+                    <label for="usuario" class="formulario_label">Usuario: *</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Juan123">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 digitos y solo número, letras y guión bajo</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario_label">Nombre: *</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 digitos y solo número, letras y guión bajo</p>
+                    </div>
+                    
+                    <div class="formulario__grupo" id="grupo__passaword">
+                        <label for="passaword" class="formulario_label">Contraseña: *</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="passaword" id="passaword" placeholder="Juan">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 16 digitos y solo número, letras y guión bajo</p>
+                        </div>
+
+                        <div class="formulario__grupo" id="grupo__passaword2">
+                            <label for="passaword2" class="formulario_label">Repetir contraseña: *</label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="passaword2" id="passaword2" placeholder="Juan">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Ambas contraseñas deben ser iguales</p>
+                        </div>
+                        
+                        <div class="formulario__grupo" id="grupo__correo">
+                            <label for="correo" class="formulario__label">Correo Electronico</label>
+                            <div class="formulario__grupo-input">
+                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error"> Ingrese un correo electrónico válido </p>
+                            </div> 
+
+                     <!--
+                    <label for="fecnac">Fecha de nacimiento:</label>
+                    <input type="date" name="fecnac" id="fecnac">
+                    <label for="Barrio">Barrio: </label>
+                    <select name="Barrio" id="Barrio">
+                        <option value="1">Parque luro</option>
+                        <option value="2">Constitucion</option>
+                        <option value="3">La Perla</option>
+                        <option value="4">Las Dalias</option>
+                        <option value="5">Camet</option>
+                        <option value="6">El Faro</option> -->
+    
+                    </select>
+                    <p>* Campos obligatorios</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos del contacto e intereses</legend>
+                   <!-- <label for="correo">E-mail: *</label>
+                    <input type="email" name="correo" id="correo" placeholder="mardelplastico@gmail.com" required> <br>
+                    <label for="tel">Celular: *</label>
+                    <input type="number" name="tel" id="tel" required>
+                    <br> -->
+                    <label for="intereses">Tengo interés en:</label>
+                     <br><br> <input type="checkbox" name="intereses" value="1">Ser voluntario
+                    <br><br><input type="checkbox" name="intereses" value="2">Armado de ecobotellas
+                    <br><br><input type="checkbox" name="intereses" value="3">Compostaje
+                    
+                    <br><br><label for="rb">¿Te gustaria tener mas informacion a cerca de...?</label>
+                    <br><br> <input type="radio" name="rb" value="1">Reciclaje
+                    <br><br><input type="radio" name="rb" value="2">Ecobotellas
+                    <br><br><input type="radio" name="rb" value="3">Compostaje
+                    <br><br><input type="radio" name="rb" value="4">Puntos verdes
+                    <br>
+                </fieldset>
+                
+
+                <div class="formulario__grupo-terminos" id="grupo__terminos">
+
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los Terminos y Condiciones
+                        <br><br>
+                        <input class="formulario__checkbox" type="checkbox" name="condiciones" id="condiciones">
+                         Acepto recibir novedades a traves del correo electronico
+                    </label>
+                </div>
+                
+                <br><br>
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i><b>Error: Por favor rellena el formulario correctamente</b> </p>
+                </div>
+    
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Enviado exitosamente!</p>
+                </div> 
+                   
+    
+                </fieldset>
+           </section>
+
+        </form>   
+       
+        </main>
+       
+        
+
+       
+        <footer id="idfooter" class="footer">
+            <h3>pie</h3></footer>
+
+     
+    
+
+    </div>
+
+    <script src="../JAVASCRIPT/practicascript.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
