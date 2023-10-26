@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="IMG/recycle-sign.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="shortcut icon" href="../IMG/recycle-sign.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style2.css">
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
     <title>MAR SIN PLASTICO</title>
 </head>
 
@@ -15,26 +16,51 @@
         <header id="idheader" class="header">
             <a id="arriba"></a>
         </header>
-
         <main class="contenido">
-           <h1>Contenido</h1>
-           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis blanditiis nesciunt earum inventore, impedit dicta architecto consequatur enim facilis amet id officiis quos, recusandae voluptatum, odit accusantium? Pariatur, deserunt maiores.</p><br>
-           <img src="IMG/Mar de plastico.avif" alt="logo" width="100%">
+           <h1>Mares plastificados?</h1>
+           <p>SI, así como se lee: "Mares plastificados" o llenos de plástio, mejor dicho.
+            <br>Que podemos hacer? Mucho, pero es urgente que tomemos conciencia.
+            Nuestras aguas se están contaminando a pasos agigantados en mayor parte por culpa de los
+            deshehos no biodegradables. Si activamos esta luha todxs juntxs podemos lograrlo.<br>
+           </p><br>
+           <img src="../IMG/Mar de plastico.avif" alt="logo" width="100%">
+           <br><br><p> Actuemos todos juntos. Vos podés ser parte del cambio, conocénos!<br>
+            “Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, puede cambiar el mundo” -Eduardo Galeano-</p>
         </main>
         <aside class="sidebar">
-            <h3>Articulos de interes</h3>
+            <h2>Articulos de interes</h2>
             <br><br>
             <article>
                 <a href="">¿Como podemos reducir los residuos que generamos en nuestras casas?</a>
-                <img src="IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+                <a> Entender la importancia del cuidado de nuestros mares</a><br>
+                <img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
             </article>
-            <br>
+            <br><br>
             <article>
                 <a href="">Huella de Carbono. ¿De qué se trata?</a>
-            </article>
-            <br>
+                <a>aprendamos a interpretar el indicador ambiental que refleja los gases de efecto invernadero emitidos por efecto directo o indirecto de un individuo u organización.</a>
+                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+              </article>
+            <br><br>
             <article>
-                <a href="">Ecobotellas</a>
+                <a href="">Ecobotellas</a><br>
+                <a>Que son? Para que sirven? Que utilidad les puedo dar? De que manera ayuda al medio ambiente?</a>
+                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+              </article>
+            <br><br>
+            <article>
+                <h3>Libro de consulta</h3><br>
+                    <div id="viewerCanvas" style="width: 400px; height: 600px;"></div>
+                    <script type="text/javascript">
+                        google.books.load();
+                
+                        function initialize() {
+                            var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+                            viewer.load('ISBN:9688382302');
+                        }
+                
+                        google.books.setOnLoadCallback(initialize);
+                    </script>
             </article>
         </aside>
 
@@ -48,8 +74,7 @@
         <footer id="idfooter" class="footer">
             <h3>pie</h3></footer>
 
-        <script src="../JAVASCRIPT/practicascript.js"></script>
+            <script src="../JAVASCRIPT/practicascript.js"> </script>
     </div>
-
 </body>
 </html>
