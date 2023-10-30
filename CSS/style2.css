@@ -11,6 +11,14 @@ body{
     font-size: 2.4vh;
 }
 
+p {
+    line-height: 1.5;
+}
+
+.boton {
+    margin-right: 10px;
+}
+
 .contenedor {
     width: 90%;
     max-width: 1000px;
@@ -26,6 +34,11 @@ body{
                          "footer footer footer"
 }
 
+.texto_italica {
+    font-style: italic;
+    line-height: 1.5;
+}
+
 .contenedor >div,
 .contenedor .header,
 .contenedor .contenido,
@@ -35,22 +48,27 @@ body{
     background: white;
     padding: 20px;
     border-radius: 4px;
-
 }
 
-.contenedor .header{
+.contenedor .header {
     background: #12203e;
     color: #fff;
     grid-area: header;
-    }
+}
 
+.contenedor .header a {
+    color: rgb(199, 199, 199)
+}
 
+.contenedor .header h1 {
+    color: rgb(199, 199, 199)
+}
 
-.contenedor .contenido{
+.contenedor .contenido {
     grid-area: contenido;
 }
 
-.contenedor .sidebar{
+.contenedor .sidebar {
     background: #5889f3;
     text-align: center;
     display: list-item;
@@ -59,7 +77,7 @@ body{
     min-height: 100px;
     grid-area: sidebar;
     gap: 20px
-  }
+ }
 
 .contenedor .widget-1
 /*.contenedor .widget-2*/ {
@@ -70,47 +88,62 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-     
 }
 
-.contenedor .widget-1{
+.contenedor .widget-1 {
     grid-area: widget-1;
 }
 
-/*.contenedor .widget-2{
+/*.contenedor .widget-2 {
     grid-area: widget-2;
-
 }*/
 
-.contenedor .caja{
+.contenedor .caja {
      background-color: lightgreen;
      padding: 10 px;
      text-align: center;
      border: 1px dashed black;
-    
-    
 }
-.contenedor .widget-1 .contacto{
+
+.contenedor .widget-1 .contacto {
     width: 50%;
 }
-.contenedor .footer{
+
+.contenedor .footer {
     background: #12203e;
     color: white;
     grid-area: footer;
-
 }
 
-
-@media screen  and (max-width:768px){
+@media screen  and (max-width:768px) {
     .contenedor{
         grid-template-areas: "header header header"
         "contenido contenido contenido"
         "sidebar sidebar sidebar"
         "widget-1 widget-1 widget-2"
         "footer footer footer";
-
     }
-    
 }
 
+.modo-oscuro {
+    background-color: #333;
+    color: #fff;
+}
 
+.modo-oscuro p, a, h2, h4{
+    color:black;
+}
+
+.modo-oscuro .header {
+    background: rgb(199, 199, 199);
+    color: #12203e;
+    grid-area: header;
+}
+
+.modo-oscuro .header h1 {
+    color: #12203e
+}
+
+.modo-oscuro .header a {
+    color: #12203e
+}
