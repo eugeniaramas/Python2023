@@ -43,8 +43,7 @@ p {
 .contenedor .header,
 .contenedor .contenido,
 .contenedor .sidebar,
-.contenedor .footer
-{
+.contenedor .footer {
     background: white;
     padding: 20px;
     border-radius: 4px;
@@ -52,7 +51,7 @@ p {
 
 .contenedor .header {
     background: #12203e;
-    color: #fff;
+    color: rgb(199, 199, 199);
     grid-area: header;
 }
 
