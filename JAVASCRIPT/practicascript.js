@@ -16,7 +16,7 @@ function onGoogleBooksApiLoad() {
 }
 
 let header = `
-<h2>MAR SIN PLASTICO</h2>
+<h1>MAR SIN PLASTICO</h1>
 <nav>
     <a class="boton" href="/HTML/inicio.html">Inicio</a>
     <a class="boton" href="/HTML/quienes_somos.html">Quienes somos</a>
