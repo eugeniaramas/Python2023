@@ -46,6 +46,29 @@ let footer = `
 `
 document.getElementById("idfooter").innerHTML = footer
 
+const modoOscuro = document.getElementById('modoOscuro');
+const body = document.body;
+
+modoOscuro.addEventListener('click', () => {
+  body.classList.toggle('modo-oscuro');
+});
+
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'https://www.google.com/books/jsapi.js';
+document.body.appendChild(script);
+
+function onGoogleBooksApiLoad() {
+  google.books.load();
+
+  function initialize() {
+    var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+    viewer.load('ISBN:9688382302');
+  }
+
+  google.books.setOnLoadCallback(initialize);
+}
+
 
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
@@ -168,25 +191,3 @@ formulario.addEventListener('submit', (e) => {
     }
 }); 
 
-const modoOscuro = document.getElementById('modoOscuro');
-const body = document.body;
-
-modoOscuro.addEventListener('click', () => {
-  body.classList.toggle('modo-oscuro');
-});
-
-var script = document.createElement('script');
-script.type = 'text/javascript';
-script.src = 'https://www.google.com/books/jsapi.js';
-document.body.appendChild(script);
-
-function onGoogleBooksApiLoad() {
-  google.books.load();
-
-  function initialize() {
-    var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
-    viewer.load('ISBN:9688382302');
-  }
-
-  google.books.setOnLoadCallback(initialize);
-}
