@@ -3,112 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../IMG/recycle-sign.png" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/style2.css">
+    <link rel="shortcut icon" href="IMG/recycle-sign.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style2.css">
     <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
     <title>MAR SIN PLASTICO</title>
 </head>
 
-<body>
-    <input type="checkbox" id="boton-modo">
-    <label for="boton-modo">Modo Oscuro</label>
-
+<body class="modo-oscuro">
+    <button id="modoOscuro">Cambiar Modo Oscuro</button>
     <div class="contenedor">
         <header id="idheader" class="header">
+            <a id="arriba"></a>
         </header>
-
         <main class="contenido">
-           <h1>Donde puedo llevar mis residuos?</h1>
+           <h2>¿Dónde puedo llevar mis residuos?</h2><br>
            <p>Nuestro compromiso es muy importante para ayudar a limpiar los mares.
-            Aunque no lo creas, podes ayudar muchisimo solo separando lo reutilizable y llevándolo a tu punto mas cercano.
-            En Mar del Plata podes encontrarnos en diferentes lugares que podes ver mas abajo.<br>
-            Si sos del partido de la costa, al final de esta página podes buscar tu ciudad en el mapa.</p>
-<br>
+            Aunque no lo creas, podés ayudar muchísimo solo separando lo reutilizable y llevándolo a tu punto más cercano.
+            En Mar del Plata podés encontrarnos en diferentes lugares que podés ver mas abajo.<br>
+            Si sos del partido de la costa, al final de esta página podés buscar tu ciudad en el mapa.</p>
+        <br>
         <section class="sectionpuntos">
         <div class="caja">
-            <img src="../IMG/cooperativapng.png" alt="COOPERATIVA" width="50%" class="foto">
+            <img src="IMG/cooperativapng.png" alt="COOPERATIVA" width="50%" class="foto">
             <h3>Cooperativa de trabajo CURA</h3>
             <p>Ubicado en Alvear 3251 - Plaza del Agua, B7603 Mar del Plata, Provincia de Buenos Aires </p>
         </div>
         <div class="caja">
-            <img src="../IMG/IEPM.png" alt="IEPM" width="50%"  class="foto">
+            <img src="IMG/IEPM.png" alt="IEPM" width="50%"  class="foto">
             <h3>Instituto Educativo Punta Mogotes</h3>
             <p>Ubicado en CVJ, Gral. Pacheco 2116, B7603 Mar del Plata, Provincia de Buenos Aires</p>
         </div>
         <div class="caja">
-            <img src="../IMG/bapro.png" alt="BAPRO" width="50%" class="foto">
+            <img src="IMG/bapro.png" alt="BAPRO" width="50%" class="foto">
             <h3>Banco Provincia Suc. Ciencias económicas</h3>
             <p>Ubicado en Bartolomé Mitre 1956, B7600 Mar del Plata, Provincia de Buenos Aires </p>
         </div>
         <div class="caja">
-            <img src="../IMG/varese.png" alt="BAHIA" width="50%" class="foto">
+            <img src="IMG/varese.png" alt="BAHIA" width="50%" class="foto">
             <h3>Balneario Bahia Varese</h3>
             <p>Ubicado en Playa Varese, P.º Jesús de Galindez s/n, B7600 Mar del Plata, Provincia de Buenos Aires</p>
         </div>
         <div class="caja">
-            <img src="../IMG/HONUBEACH.png" alt="HONU BEACH" width="50%" class="foto">
+            <img src="IMG/HONUBEACH.png" alt="HONU BEACH" width="50%" class="foto">
             <h3>Balneario Honu Beach</h3>
             <p>Ubicado en Av. de los Trabajadores 5052, B7600 Mar del Plata, Provincia de Buenos Aires</p>
         </div>
         <div class="caja">
-            <img src="../IMG/ecomarket.png" alt="ECOMARKET" width="50%" class="foto">
+            <img src="IMG/ecomarket.png" alt="ECOMARKET" width="50%" class="foto">
             <h3>Woods Ecomarket</h3>
             <p>Ubicado en Córdoba 4354, B7602CBJ Mar del Plata, Provincia de Buenos Aires</p>
         </div>
-
-        </section>
-<br><br>
-        <section class="section-1">
-            <h3>Puntos de reciclaje en la ciudad de Mar del Plata y Partido de la costa</h3><br>
-            <iframe src="https://www.google.com/maps/d/embed?mid=16yUET84Eo9KW1IIUhj_ejwI3abnWQ_n9" height="480" width="100%" title="Puntos Verdes"></iframe>
-        </section>
-
-   <hr>
-        </main>
-        <aside class="sidebar">
-            <h2>Articulos de interes</h2>
-            <br><br>
-            <article>
-                <a href="">¿Como podemos reducir los residuos que generamos en nuestras casas?</a>
-                <br><a> Entender la importancia del cuidado de nuestros mares</a><br>
-                <img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
-            </article>
-            <br><br>
-            <article>
-                <a href="">Huella de Carbono. ¿De qué se trata?</a><br>
-                <a>aprendamos a interpretar el indicador ambiental que refleja los gases de efecto invernadero emitidos por efecto directo o indirecto de un individuo u organización.</a>
-                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
-            </article>
-            <br><br>
-            <article>
-                <a href="">Ecobotellas</a><br>
-                <a>Que son? Para que sirven? Que utilidad les puedo dar? De que manera ayuda al medio ambiente?</a>
-                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
-            </article><br>
-            <article>
-                <h3>Libro de consulta</h3><br>
-                    <div id="viewerCanvas" style="width: 400px; height: 600px;"></div>
-                    <script type="text/javascript">
-                        google.books.load();
-                
-                        function initialize() {
-                            var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
-                            viewer.load('ISBN:9688382302');
-                        }
-                
-                        google.books.setOnLoadCallback(initialize);
-                    </script>
-            </article>
-        </aside>
-
-       
-
-
-        <footer id="idfooter" class="footer">
-            <h3>pie</h3></footer>
-
-        <script src="../JAVASCRIPT/practicascript.js"></script>
+    </section>
+    <br><br>
+    <section class="section-1">
+        <h3>Puntos de reciclaje en la ciudad de Mar del Plata y Partido de la costa</h3><br>
+        <iframe src="https://www.google.com/maps/d/embed?mid=16yUET84Eo9KW1IIUhj_ejwI3abnWQ_n9" height="480" width="100%" title="Puntos Verdes"></iframe>
+    </section>
+    <div class="widget-1">
+        <h3>Si queres contactarte con nosotros, no dudes en escribirnos.</h3>
+        <section class="contacto">
+            <br>
+            <form action="contacto">
+                 <label for="nom">Nombre: *</label>
+                <input type="text" name="nom" id="nom" maxlength="30" required> <br><br>
+                <label for="ape">Apellido: *</label>
+                <input type="text" name="ape" id="ape" maxlength="30" required> <br><br>
+                <label for="correo">E-mail: *</label>
+                <input type="email" name="correo" id="correo" placeholder="marsinplastico@example.com" required> <br><br>
+                <label for="comentarios">Escriba su consulta: *</label>
+                <br>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10" required placeholder="Escriba su consulta..."></textarea>
+                <p>* Campos obligatorios</p>
+                <br><br>
+                <input type="submit" value="Enviar datos">
+                <input type="reset" value="Borrar datos">
+            </form>
+         </section>
     </div>
+    <footer id="idfooter" class="footer">
+        <h3>pie</h3></footer>
 
+        <script src="JAVASCRIPT/practicascript.js"> </script>
+</div>
 </body>
 </html>
