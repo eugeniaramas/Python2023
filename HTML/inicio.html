@@ -3,97 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../IMG/recycle-sign.png" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/style2.css">
+    <link rel="shortcut icon" href="IMG/recycle-sign.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style2.css">
     <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
     <title>MAR SIN PLASTICO</title>
 </head>
 
-<body>
-    <input type="checkbox" id="boton-modo">
-    <label for="boton-modo">Modo Oscuro</label>
+<body class="modo-oscuro">
+    <button id="modoOscuro">Cambiar Modo Oscuro</button>
     <div class="contenedor">
         <header id="idheader" class="header">
             <a id="arriba"></a>
         </header>
         <main class="contenido">
-           <h1>Mares plastificados?</h1>
+           <h2>¿Mares plastificados?</h2><br>
            <p>SI, así como se lee: "Mares plastificados" o llenos de plástio, mejor dicho.
-            <br><br>Que podemos hacer? Mucho, pero es urgente que tomemos conciencia. <br><br>
+            <br>Que podemos hacer? Mucho, pero es urgente que tomemos conciencia.
             Nuestras aguas se están contaminando a pasos agigantados en mayor parte por culpa de los
             deshehos no biodegradables. Si activamos esta luha todxs juntxs podemos lograrlo.<br>
            </p><br>
-           <img src="../IMG/Mar de plastico.avif" alt="logo" width="100%">
-           <br><br><p> Actuemos todos juntos. Vos podés ser parte del cambio, conocénos!<br>
-            “Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, puede cambiar el mundo” -Eduardo Galeano-</p>
+           <img src="IMG/Mar de plastico.avif" alt="logo" width="100%">
+            <br><br><p> Actuemos todos juntos. Vos podés ser parte del cambio, conocénos!<br>
+           <br>
+           <p class="texto_italica">“Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, 
+            puede cambiar el mundo” -Eduardo Galeano-</p>
         </main>
         <aside class="sidebar">
-            <h2>Articulos de interes</h2>
+            <h2>Artículos de interés</h2>
             <br><br>
             <article>
-                <a href="">¿Como podemos reducir los residuos que generamos en nuestras casas?</a>
-                <a> Entender la importancia del cuidado de nuestros mares</a><br>
-                <img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+                <a href="">¿Cómo podemos reducir los residuos que generamos en nuestras casas?</a>
+                <p> Entender la importancia del cuidado de nuestros mares</p><br><br>
+                <img src="IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
             </article>
             <br><br>
             <article>
                 <a href="">Huella de Carbono. ¿De qué se trata?</a>
-                <a>aprendamos a interpretar el indicador ambiental que refleja los gases de efecto invernadero emitidos por efecto directo o indirecto de un individuo u organización.</a>
-                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+                <p>Aprendamos a interpretar el indicador ambiental que refleja la emisión de gases del efecto invernadero por efecto directo o indirecto de un individuo u organización.</p>
+                <br><img src="IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
               </article>
             <br><br>
             <article>
                 <a href="">Ecobotellas</a><br>
-                <a>Que son? Para que sirven? Que utilidad les puedo dar? De que manera ayuda al medio ambiente?</a>
-                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+                <p>¿Qué son? ¿Para qué sirven? ¿Qué utilidad les puedo dar? <br> ¿De qué manera ayuda al medio ambiente?</p>
+                <br><img src="IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
               </article>
             <br><br>
             <article>
-                <h3>Libro de consulta</h3><br>
-                    <div id="viewerCanvas" style="width: 400px; height: 600px;"></div>
-                    <script type="text/javascript">
-                        google.books.load();
+               <h4>Libro de consulta</h4>
+                <br>
+                <div id="viewerCanvas" style="width: 400px; height: 600px;"></div>
+                <script type="text/javascript">
+                    google.books.load();
                 
-                        function initialize() {
-                            var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
-                            viewer.load('ISBN:9688382302');
-                        }
+                    function initialize() {
+                        var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+                        viewer.load('ISBN:9688382302');
+                    }
                 
-                        google.books.setOnLoadCallback(initialize);
-                    </script>
+                    google.books.setOnLoadCallback(initialize);
+                </script>
             </article>
         </aside>
 
         <div class="widget-1">
-            <h3>Si queres contactarte con nosotros, no dudes en escribirnos.</h3>
-            <section class="contacto">
-                <br>
-                <form action="contacto">
-                     <label for="nom">Nombre: *</label>
-                    <input type="text" name="nom" id="nom" maxlength="30" required> <br>
-                    <label for="ape">Apellido: *</label>
-                    <input type="text" name="ape" id="ape" maxlength="30" required> <br>
-                    <label for="correo">E-mail: *</label>
-                    <input type="email" name="correo" id="correo" placeholder="marsinplastico@example.com" required> <br>
-                    <label for="comentarios">Escriba su consulta: *</label>
-                    <br>
-                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" required placeholder="Escriba su consulta..."></textarea>
-                    <p>* Campos obligatorios</p>
-                    <br><br>
-                    <input type="submit" value="Enviar datos">
-                    <input type="reset" value="Borrar datos">
-                </form>
-             </section>
+            <h3>WIDGET1</h3>
         </div>
-        
-       
+        <div class="widget-2">
+            <h3>WIDGET2</h3>
+        </div>
 
         <footer id="idfooter" class="footer">
-            <h3>pie</h3>
-            <a href="#arriba">🔼</a>
-        </footer>
+            <h3>pie</h3></footer>
 
-            <script src="../JAVASCRIPT/practicascript.js"> </script>
+            <script src="JAVASCRIPT/practicascript.js"> </script>
     </div>
 </body>
 </html>
