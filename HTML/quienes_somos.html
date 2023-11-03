@@ -3,108 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../IMG/recycle-sign.png" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/style2.css">
+    <link rel="shortcut icon" href="IMG/recycle-sign.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style2.css">
     <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
     <title>MAR SIN PLASTICO</title>
 </head>
 
-<body>
-    <input type="checkbox" id="boton-modo">
-    <label for="boton-modo">Modo Oscuro</label>
-
+<body class="modo-oscuro">
+    <button id="modoOscuro">Cambiar Modo Oscuro</button>
     <div class="contenedor">
         <header id="idheader" class="header">
+            <a id="arriba"></a>
         </header>
-
         <main class="contenido">
-           <h1><b>¿Quienes somos?</b></h1>
+           <h1><b>¿Quienes somos?</b></h1><br>
            <p>Somos "Mar sin plástico", una asociación sin fines de lucro en General Pueyrredón y Batán.
             Contamos con el apoyo y la participación activa de la Universidad nacional de Mar del Plata y la Municipalidad de General Pueyrredón.
             Creemos que entre todos podemos eliminar la contaminación de nuestros mares, ya que su reducci´pn es urgente.
            </p>
-
             <br><br>
-
             <h3>Mision y compromiso</h3><br>
             <p>Nuestra misión es reducir la cantidad de plástico y no biodegradables que se alojan en nuestros mares,
             ya que éstos son unos de los mayores responsables de la muerte de nuestras especies marinas y la destrucción de ecosistemas acuáticos.
             </p>
-
             <br><br>
-
             <h3>Proyectos a futuro</h3><br>
             <p>Nuestro proyecto a futuro mas importante es poder extender nuestra campaña a todo el partido de la costa.
             si activamos entre todas las ciudades costeras y portuarias podemos reducir este impacto. Necesitamos tu ayuda! Contale nuestro proyecto a todos los que conozcas.</p>
-            
             <br><br>
-
             <h3>Opiniones de voluntarios</h3>
             <br><br>
-            <h4>Agustin Gomez</h4>
+            <h4>Agustin Gomez</h4><br>
             <p><i>"Excelente experiencia con el grupo de Mar sin Plastico, recomiendo a todo el que este interesado en hacerle frente al cambio climatico"</i></p>
             <br><br>
-            <h4>Luciana Martinez</h4>
+            <h4>Luciana Martinez</h4><br>
             <p><i>"Un hermoso equipo de trabajo, muy compremetidos con lo que hacen"</i></p>
             <br><br>
-            <h4>Juan Pablo Garcia</h4>
+            <h4>Juan Pablo Garcia</h4><br>
             <p><i>"Una experencia inolvidable, se puede aprender muchas cosas de ecologia"</i></p>
-            
-
-
-
-       
-       
-       
         </main>
-
         <aside class="sidebar">
-            <h2>Articulos de interes</h2>
+            <h2>Artículos de interés</h2>
             <br><br>
             <article>
-                <a href="">¿Como podemos reducir los residuos que generamos en nuestras casas?</a>
-                <br><a> Entender la importancia del cuidado de nuestros mares</a><br>
-                <img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+                <a href="">¿Cómo podemos reducir los residuos que generamos en nuestras casas?</a>
+                <p> Entender la importancia del cuidado de nuestros mares</p><br><br>
+                <img src="IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
             </article>
             <br><br>
             <article>
                 <a href="">Huella de Carbono. ¿De qué se trata?</a>
-                <br><a>aprendamos a interpretar el indicador ambiental que refleja los gases de efecto invernadero emitidos por efecto directo o indirecto de un individuo u organización.</a>
-                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
-            </article>
+                <p>Aprendamos a interpretar el indicador ambiental que refleja la emisión de gases del efecto invernadero por efecto directo o indirecto de un individuo u organización.</p>
+                <br><img src="IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+              </article>
             <br><br>
             <article>
                 <a href="">Ecobotellas</a><br>
-                <a>Que son? Para que sirven? Que utilidad les puedo dar? De que manera ayuda al medio ambiente?</a>
-                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
-            </article>
-            <article><br>
-                <h3>Libro de consulta</h3><br>
-                    <div id="viewerCanvas" style="width: 400px; height: 600px;"></div>
-                    <script type="text/javascript">
-                        google.books.load();
+                <p>¿Qué son? ¿Para qué sirven? ¿Qué utilidad les puedo dar? <br> ¿De qué manera ayuda al medio ambiente?</p>
+                <br><img src="IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+              </article>
+            <br><br>
+            <article>
+               <h4>Libro de consulta</h4>
+                <br>
+                <div id="viewerCanvas" style="width: 400px; height: 600px;"></div>
+                <script type="text/javascript">
+                    google.books.load();
                 
-                        function initialize() {
-                            var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
-                            viewer.load('ISBN:9688382302');
-                        }
+                    function initialize() {
+                        var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+                        viewer.load('ISBN:9688382302');
+                    }
                 
-                        google.books.setOnLoadCallback(initialize);
-                    </script>
+                    google.books.setOnLoadCallback(initialize);
+                </script>
             </article>
         </aside>
-
         <div class="widget-1">
             <h3>Si queres contactarte con nosotros, no dudes en escribirnos.</h3>
             <section class="contacto">
                 <br>
                 <form action="contacto">
                      <label for="nom">Nombre: *</label>
-                    <input type="text" name="nom" id="nom" maxlength="30" required> <br>
+                    <input type="text" name="nom" id="nom" maxlength="30" required> <br><br>
                     <label for="ape">Apellido: *</label>
-                    <input type="text" name="ape" id="ape" maxlength="30" required> <br>
+                    <input type="text" name="ape" id="ape" maxlength="30" required> <br><br>
                     <label for="correo">E-mail: *</label>
-                    <input type="email" name="correo" id="correo" placeholder="marsinplastico@example.com" required> <br>
+                    <input type="email" name="correo" id="correo" placeholder="marsinplastico@example.com" required> <br><br>
                     <label for="comentarios">Escriba su consulta: *</label>
                     <br>
                     <textarea name="comentarios" id="comentarios" cols="30" rows="10" required placeholder="Escriba su consulta..."></textarea>
@@ -115,19 +100,10 @@
                 </form>
              </section>
         </div>
-      
-
         <footer id="idfooter" class="footer">
             <h3>pie</h3></footer>
 
-        <script src="../JAVASCRIPT/practicascript.js"></script>
-
-
-
-
-
-
+            <script src="JAVASCRIPT/practicascript.js"> </script>
     </div>
-
 </body>
 </html>
