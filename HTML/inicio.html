@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../IMG/recycle-sign.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/inicio.css">
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+    <title>MAR SIN PLASTICO</title>
+</head>
+
+<body class="modo-oscuro">
+    <button id="modoOscuro">Cambiar Modo </button>
+   
+    <div class="contenedor">
+
+        <header id="idheader" class="header">
+            <a id="arriba"></a>
+        </header>
+        
+        <main class="contenido">
+           <h2>¿Mares plastificados?</h2><br>
+           <p>SI, así como se lee: "Mares plastificados" o llenos de plástio, mejor dicho.
+            <br>¿Que podemos hacer? Mucho, pero es urgente que tomemos conciencia.
+            Nuestras aguas se están contaminando a pasos agigantados en mayor parte por culpa de los
+            deshehos no biodegradables. Si activamos esta luha todxs juntxs podemos lograrlo.<br>
+           </p><br>
+           <img class="img_principal" src="../IMG/Mar de plastico.avif" alt="logo" width="100%">
+            <br><br><p> Actuemos todos juntos. Vos podés ser parte del cambio, conocénos!<br>
+           <br>
+           <p class="texto_italica">“Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, 
+            puede cambiar el mundo” -Eduardo Galeano-</p>
+        </main>
+
+        <aside class="sidebar">
+        
+            <h2>Artículos de interés</h2>
+            <br><br>
+        
+            <article>
+                <a href="">¿Cómo podemos reducir los residuos que generamos en nuestras casas?</a>
+                <p> Entender la importancia del cuidado de nuestros mares</p><br><br>
+                <img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+            </article>
+            <br><br>
+        
+            <article>
+                <a href="">Huella de Carbono. ¿De qué se trata?</a>
+                <p>Aprendamos a interpretar el indicador ambiental que refleja la emisión de gases del efecto invernadero por efecto directo o indirecto de un individuo u organización.</p>
+                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+              </article>
+            <br><br>
+            <article>
+                <a href="https://ongteprotejo.org/ar/articulos/ecobotellas-una-practica-eco-sustentable-desde-nuestro-hogar/">Ecobotellas</a><br>
+                <p>¿Qué son? ¿Para qué sirven? ¿Qué utilidad les puedo dar? <br> ¿De qué manera ayuda al medio ambiente?</p>
+                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+        
+            </article>
+        
+            <br><br>
+        
+            <article class="googlebooks">
+                <h4>Libro de consulta</h4>
+                 <br>
+                 <div id="viewerCanvas"  style = "width: 100%"  height="250px">
+                 </div>
+          
+                 <script type="text/javascript">
+                     google.books.load();
+                 
+                     function initialize() {
+                         var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+                         viewer.load('ISBN:9688382302');
+                     }
+                 
+                     google.books.setOnLoadCallback(initialize);
+                 </script>
+            
+            </article>
+
+        </aside>
+
+        <div class="widget-1">
+            <div class="grande">
+                <img  src="../IMG/voluntaria.jpg" alt="Imagen 1" class="img" width="50%" >
+                <img  src="../IMG/NOPLANeTAB.png" alt="Imagen 2" class="img" width="50%">
+                <img  src="../IMG/cigarrillos.jpg" alt="Imagen 3" class="img" width="50%">
+                <img  src="../IMG/voluntarios.jpg" alt="Imagen 4" class="img" width="50%">
+                <img  src="../IMG/HONUBEACH.png" alt="Imagen 5" class="img" width="50%">
+                <img  src="../IMG/HONUBEACH.png" alt="Imagen 6" class="img" width="50%">
+            </div>
+           <div class="contenedor_puntos">
+                <div class="puntos">
+                    <img class="punto activo" src="../IMG/flecha-izquierda.png" alt="">
+                    <img class="punto" src="../IMG/flecha-correcta.png" alt="" >
+                </div>
+           </div>
+        </div>
+        
+        <footer id="idfooter" class="footer">
+        
+        </footer>
+            <script src="../JAVASCRIPT/carrousel.js"></script>
+            <script src="../JAVASCRIPT/practicascript.js"> </script>
+    </div>
+</body>
+</html>
