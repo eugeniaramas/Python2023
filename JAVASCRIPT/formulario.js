@@ -58,7 +58,7 @@ const validarFormulario = (e) => {
         
         break;
 		case "nombre":
-			validarCampo(expresiones.nombre,e.target, 'nombre');
+			validarCampo(expresiones.nombre, e.target, 'nombre');
 				
 		break;
 		case "password":
@@ -66,7 +66,7 @@ const validarFormulario = (e) => {
 			validarPassword2();
 		break;
 		case "password2":
-		validarPassword2();
+			validarPassword2();
 		
 		break;
 
@@ -108,7 +108,7 @@ const validarPassword2 = () => {
 		document.querySelector(`#grupo__password2 i `).classList.add('fa-times-circle');
 		document.querySelector(`#grupo__password2 i `).classList.remove('fa-check-circle');
 		document.querySelector(`#grupo__password2 .formulario__input-error`).classList.add('formulario__input-error-activo');
-		campos['password'] =false;
+		campos['password'] = false;
 	}
 
 	else {
@@ -117,7 +117,7 @@ const validarPassword2 = () => {
 		document.querySelector(`#grupo__password2 i `).classList.remove('fa-times-circle');
 		document.querySelector(`#grupo__password2 i `).classList.add('fa-check-circle');
 		document.querySelector(`#grupo__password2 .formulario__input-error`).classList.remove('formulario__input-error-activo');
-		campos['password'] =true;
+		campos['password'] = true;
 	}
 
   }
@@ -125,19 +125,19 @@ const validarPassword2 = () => {
 inputs.forEach((input) => {
 	input.addEventListener('keyup', validarFormulario );
 	input.addEventListener('blur', validarFormulario );		
-	});
+});
 
 
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
     const terminos = document.getElementById('terminos');
-	if(campos.usuario && campos.nombre && campos.password && campos.correo && terminos.checked){
+	if(campos.usuario && campos.nombre && campos.password  && campos.correo && terminos.checked){
 		formulario.reset();
 
-        document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo')
+        document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
         setTimeout(() => {
-            document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo')
+            document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
 
         }, 5000);
 

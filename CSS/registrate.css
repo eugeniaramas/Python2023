@@ -1,4 +1,4 @@
-*{
+ *{
     margin:0;
     padding: 0;
 }
@@ -19,14 +19,15 @@ body{
     grid-template-rows: repeat(4,auto);
 
     grid-template-areas: "header header header"
-                         "contenido contenido contenido"
-                         "contenido contenido contenido"
+                         "contenido contenido sidebar"
+                         "contenido contenido sidebar"
                          "footer footer footer"
 }
 
 .contenedor >div,
 .contenedor .header,
 .contenedor .contenido,
+.contenedor .sidebar,
 .contenedor .footer
 {
     background: white;
@@ -36,8 +37,8 @@ body{
 }
 
 .contenedor .header{
-    background: #12203e;
-    color: #fff;
+	background: #12203e;
+    color: rgb(199, 199, 199);
     grid-area: header;
     }
 
@@ -45,7 +46,7 @@ body{
 
 .contenedor .contenido{
     grid-area: contenido;
-}
+} */
 
 
 .formulario {
@@ -195,7 +196,7 @@ body{
 
 /* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 800px){
-	.formulario{
+	.formulario {
 		grid-template-columns: 1fr;
 	}
 
@@ -207,68 +208,123 @@ body{
 
 .formulario{
 	width: 100%;
+
+}
+
+.sidebar{
+	width: 100%;
+}
+}
+
+@media screen  and (max-width:768px) {
+    .contenedor{
+
+        background-color: rgb(10, 114, 79);
+        grid-template-areas:
+        "header header header"
+        "contenido contenido contenido"
+        "sidebar sidebar sidebar"
+        "carrousel carrousel carrousel"
+        "footer footer footer";
+    }
+
+	
+.formulario{
+	width: 100%;
+
+}
+
+.sidebar{
+	width: 100%;
 }
 }
 
 
-.contenedor .sidebar{
-    grid-column: 3 / 4 ;
+@media screen and (max-width: 600px){
+
+    .contenedor{
+
+        background-color: yellowgreen;
+
+        grid-template-areas:
+        "header header header"
+        "contenido contenido contenido"
+        "sidebar sidebar sidebar"
+        "carrousel carrousel carrousel"
+        "footer footer footer";
+
+    }
+	
+.formulario{
+	width: 100%;
+
+}
+
+.sidebar{
+	width: 100%;
+}
+}
+  
+
+.contenedor .sidebar {
     background: #5889f3;
     text-align: center;
-    display: flex;
+    display: list-item;
     align-items: center;
     justify-content: center;
-    min-height: 100px;
+    min-height: 90px;
     grid-area: sidebar;
-  }
-
-/*.contenedor .widget-1,
-.contenedor .widget-2 {
-    background: #106675;
-    color: white;
-    height: 100px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     
-}
-
-.contenedor .widget-1{
-    grid-area: widget-1;
-}
-
-.contenedor .widget-2{
-    grid-area: widget-2;
-
-}*/
-
-/*.contenedor .caja{
-     background-color: lightgreen;
-     padding: 10 px;
-     text-align: center;
-     border: 1px dashed black;
-    
-    
-}*/
+    gap: 20px
+ }
 
 .contenedor .footer{
     background: #12203e;
     color: white;
     grid-area: footer;
 
+} */
+
+
+
+
+.modo-oscuro {
+    background-color: #333;
+    color: #fff;
 }
 
+.modo-oscuro p, a, h2, h4{
+    color:black;
+}
 
-/*@media screen  and (max-width:768px){
-    .contenedor{
-        grid-template-areas: "header header header"
-        "contenido contenido contenido"
-        "sidebar sidebar sidebar"
-        "widget-1 widget-1 widget-2"
-        "footer footer footer";
+.modo-oscuro .header {
+    background: rgb(199, 199, 199);
+    color: #12203e;
+    grid-area: header;
+}
 
-    }
-    
-}*/
+.modo-oscuro .header h1 {
+    color: #12203e
+}
+
+.modo-oscuro .header a {
+    color: #12203e
+}
+
+.links {
+    /* Estilos por defecto */
+	text-decoration: none;
+    color: black;
+    background-color: transparent;
+    transition: color 1s, background-color 1s; /* Agregamos una transición suave */
+}
+
+.links:hover {
+    /* Estilos al pasar el mouse sobre el elemento */
+    color: rgb(25, 175, 230);
+    background-color: white;
+}
+
+.contenedor .footer p {
+    color: white;
+}
 

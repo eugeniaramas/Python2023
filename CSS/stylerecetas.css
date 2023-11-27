@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: #e9ecf4;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+    font-size: 2.4vh;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.boton {
+    margin-right: 10px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
+
+    grid-template-areas: "header header header "
+                         "contenido_recetas conntenido_recetas sidebar "
+                         "footer footer footer "
+}
+
+.texto_italica {
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.contenedor >div,
+.contenedor .header,
+.contenedor .contenido_recetas,
+.contenedor .sidebar,
+.contenedor .footer {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header {
+    background: #12203e;
+    color: rgb(199, 199, 199);
+    grid-area: header;
+}
+
+.contenedor .header a {
+    color: rgb(199, 199, 199)
+}
+
+.contenedor .header h1 {
+    color: rgb(199, 199, 199)
+}
+
+
+
+.contenedor .contenido_recetas {
+    background-color: #5889f3;
+    grid-area: contenido_recetas;
+}
+
+.contenedor .contenido_recetas h3{
+    color: #333;
+}
+
+.contenedor .sidebar {
+    background: #5889f3;
+    text-align: center;
+    display: list-item;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+    gap: 20px
+ }
+
+
+
+.contenedor .caja {
+     background-color: lightgreen;
+     padding: 10 px;
+     text-align: center;
+     border: 1px dashed black;
+}
+
+.contenedor .sidebar {
+    background: #5889f3;
+    text-align: center;
+    display: list-item;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+    gap: 20px
+ }
+
+
+.contenedor .footer {
+    background: #12203e;
+    color: white;
+    grid-area: footer;
+}
+
+.contenedor .footer p{
+    
+    color: white;
+    
+}
+
+/* @media screen  and (max-width:768px) {
+    .contenedor{
+        grid-template-areas: "header header header"
+        "contenido contenido contenido"
+        "sidebar sidebar sidebar"
+        "widget-1 widget-1 widget-2"
+        "footer footer footer";
+    }
+} */ 
+
+.modo-oscuro {
+    background-color: #333;
+    color: #fff;
+}
+
+.modo-oscuro p, a, h2, h4{
+    color:black;
+}
+
+.modo-oscuro .header {
+    background: rgb(199, 199, 199);
+    color: #12203e;
+    grid-area: header;
+}
+
+.modo-oscuro .header h1 {
+    color: #12203e
+}
+
+.modo-oscuro .header a {
+    color: #12203e
+}
+
+.links {
+    /* Estilos por defecto */
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    transition: color 1s, background-color 1s; /* Agregamos una transición suave */
+}
+
+.links:hover {
+    /* Estilos al pasar el mouse sobre el elemento */
+    color: rgb(25, 175, 230);
+    background-color: white;
+}
+
+.contenedor_recetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.texto_intro {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    
+}
+
+.nombre_receta {
+    display: flex;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    justify-content: center; 
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #333;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.imagen_receta{
+    border-radius: 16px;
+    justify-content: center;
+}
+
+@media screen  and (max-width:768px) {
+    .contenedor{
+
+        background-color: rgb(10, 114, 79);
+        grid-template-areas:
+        "header header header"
+        "contenido contenido contenido"
+        "sidebar sidebar sidebar"
+        "carrousel carrousel carrousel"
+        "footer footer footer";
+    }
+}
+
+
+@media screen and (max-width: 600px){
+
+    .contenedor{
+
+        background-color: yellowgreen;
+
+        grid-template-areas:
+        "header header header"
+        "contenido contenido contenido"
+        "sidebar sidebar sidebar"
+        "carrousel carrousel carrousel"
+        "footer footer footer";
+
+    }
+}
+  

@@ -26,11 +26,11 @@ p {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,auto);
+    grid-template-rows: repeat(3,auto);
 
     grid-template-areas: "header header header"
                          "contenido contenido sidebar"
-                         "widget-1 widget-1 sidebar"
+                         "widget-1 widget-1 widget-1"
                          "footer footer footer"
 }
 
@@ -78,6 +78,15 @@ p {
     gap: 20px
  }
 
+
+
+.contenedor .caja {
+     background-color: rgb(106, 179, 252);
+     padding: 40 px;
+     text-align: center;
+     border: 1px dashed rgb(100, 8, 206);
+}
+
 .contenedor .widget-1
 /*.contenedor .widget-2*/ {
     background: #106675;
@@ -93,25 +102,22 @@ p {
     grid-area: widget-1;
 }
 
-/*.contenedor .widget-2 {
-    grid-area: widget-2;
-}*/
-
-.contenedor .caja {
-     background-color: lightgreen;
-     padding: 10 px;
-     text-align: center;
-     border: 1px dashed black;
+.contenedor .widget-1{
+    text-align: center;    
 }
 
-.contenedor .widget-1 .contacto {
-    width: 50%;
+.contenedor .mapa{
+    width: 100%;
 }
 
 .contenedor .footer {
     background: #12203e;
     color: white;
     grid-area: footer;
+}
+
+.contenedor .footer p {
+    color: white;
 }
 
 @media screen  and (max-width:768px) {
@@ -146,3 +152,48 @@ p {
 .modo-oscuro .header a {
     color: #12203e
 }
+
+.links {
+    /* Estilos por defecto */
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    transition: color 1s, background-color 1s; /* Agregamos una transición suave */
+}
+
+.links:hover {
+    /* Estilos al pasar el mouse sobre el elemento */
+    color: rgb(25, 175, 230);
+    background-color: white;
+}
+
+@media screen  and (max-width:768px) {
+    .contenedor{
+
+        background-color: rgb(10, 114, 79);
+        grid-template-areas:
+        "header header header"
+        "contenido contenido contenido"
+        "sidebar sidebar sidebar"
+        "carrousel carrousel carrousel"
+        "footer footer footer";
+    }
+}
+
+
+@media screen and (max-width: 600px){
+
+    .contenedor{
+
+        background-color: yellowgreen;
+
+        grid-template-areas:
+        "header header header"
+        "contenido contenido contenido"
+        "sidebar sidebar sidebar"
+        "carrousel carrousel carrousel"
+        "footer footer footer";
+
+    }
+}
+  

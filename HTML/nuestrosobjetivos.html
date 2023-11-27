@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="IMG/recycle-sign.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="shortcut icon" href="../IMG/recycle-sign.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/inicio.css">
     <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
     <title>MAR SIN PLASTICO</title>
 </head>
 
 <body class="modo-oscuro">
-    <button id="modoOscuro">Cambiar Modo Oscuro</button>
+    <button id="modoOscuro">Cambiar Modo</button>
     <div class="contenedor">
         <header id="idheader" class="header">
             <a id="arriba"></a>
@@ -18,12 +18,14 @@
 
         <main class="contenido">
            <h2>¿Qué tipos de reciclaje existen?</h2><br>
+           
            <p>Existen tres tipos principales. El reciclaje primario, o de circuito cerrado,
             convierte los materiales en más de lo mismo, como papel en más papel o las latas de gaseosa
              en más latas de gaseosa. El secundario transforma un producto desechado en otros
              objetos aunque fabricados con el mismo material. Y el terciario o químico descompone
              químicamente los materiales para producir con ellos algo muy diferente.</p>
             <br><h2>Buena idea, buen negocio</h2><br>
+           
             <p>¿Por qué es importante reciclar? Mar sin plástico señala múltiples ventajas,
             aunque pueden resumirse en que conserva los recursos naturales y reduce la
             sobreexplotación de materias primas protegiendo así los hábitats.
@@ -32,6 +34,7 @@
             mucha más energía para extraer, refinar, transportar y procesar materias primas
             que para transformar materiales reciclados ya disponibles.</p><br>
             <h2>Inversiones sostenibles</h2><br>
+           
             <p>La historia del reciclaje es relativamente reciente y su industria enfrenta
             retos como la inversión inicial de capital para los sistemas de recogida e instalaciones
             industriales no siempre asumible por los países en desarrollo. En la otra cara de la
@@ -40,6 +43,7 @@
             presión social y desde luego el efecto llamada de normativas nacionales e internacionales
             favorables.</p><br>
             <h2>Un esfuerzo colectivo</h2><br>
+           
             <p>En todo caso, el concepto y la actividad del reciclaje va mucho más allá
             de las cuestiones técnicas y económicas, implica un esfuerzo colectivo
             que emplaza a toda la sociedad: desde los hábitos ciudadanos en la separación
@@ -47,31 +51,37 @@
             públicas que deben facilitar ese servicio, junto con otras medidas como los
             etiquetados con información sobre el uso de materiales reciclados en los productos.</p>
         </main>
+        
         <aside class="sidebar">
+        
             <h2>Artículos de interés</h2>
             <br><br>
+        
             <article>
                 <a href="">¿Cómo podemos reducir los residuos que generamos en nuestras casas?</a>
                 <p> Entender la importancia del cuidado de nuestros mares</p><br><br>
-                <img src="IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+                <img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
             </article>
             <br><br>
+        
             <article>
                 <a href="">Huella de Carbono. ¿De qué se trata?</a>
                 <p>Aprendamos a interpretar el indicador ambiental que refleja la emisión de gases del efecto invernadero por efecto directo o indirecto de un individuo u organización.</p>
-                <br><img src="IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
-              </article>
+                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+            </article>
             <br><br>
+        
             <article>
                 <a href="">Ecobotellas</a><br>
                 <p>¿Qué son? ¿Para qué sirven? ¿Qué utilidad les puedo dar? <br> ¿De qué manera ayuda al medio ambiente?</p>
-                <br><img src="IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
-              </article>
+                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+             </article>
             <br><br>
+        
             <article>
                <h4>Libro de consulta</h4>
                 <br>
-                <div id="viewerCanvas" style="width: 400px; height: 600px;"></div>
+                <div id="viewerCanvas" style="width: 400px; /* height: 600px; */"></div>
                 <script type="text/javascript">
                     google.books.load();
                 
@@ -84,31 +94,11 @@
                 </script>
             </article>
         </aside>
-        <div class="widget-1">
-            <h3>Si queres contactarte con nosotros, no dudes en escribirnos.</h3>
-            <section class="contacto">
-                <br>
-                <form action="contacto">
-                     <label for="nom">Nombre: *</label>
-                    <input type="text" name="nom" id="nom" maxlength="30" required> <br><br>
-                    <label for="ape">Apellido: *</label>
-                    <input type="text" name="ape" id="ape" maxlength="30" required> <br><br>
-                    <label for="correo">E-mail: *</label>
-                    <input type="email" name="correo" id="correo" placeholder="marsinplastico@example.com" required> <br><br>
-                    <label for="comentarios">Escriba su consulta: *</label>
-                    <br>
-                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" required placeholder="Escriba su consulta..."></textarea>
-                    <p>* Campos obligatorios</p>
-                    <br><br>
-                    <input type="submit" value="Enviar datos">
-                    <input type="reset" value="Borrar datos">
-                </form>
-             </section>
-        </div>
+        
         <footer id="idfooter" class="footer">
-            <h3>pie</h3></footer>
+        </footer>
 
-            <script src="JAVASCRIPT/practicascript.js"> </script>
+            <script src="../JAVASCRIPT/practicascript.js"> </script>
     </div>
 </body>
 </html>

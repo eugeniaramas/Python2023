@@ -18,11 +18,13 @@ function onGoogleBooksApiLoad() {
 let header = `
 <h1>MAR SIN PLASTICO</h1>
 <nav>
-    <a class="boton" href="inicio.html">Inicio</a>
-    <a class="boton" href="quienes_somos.html">Quienes somos</a>
-    <a class="boton" href="nuestrosobjetivos.html">Nuestros Objetivos</a>
-    <a class="boton" href="puntosverdes.html">Puntos Verdes</a>
-    <a class="boton" href="HTML/Registrate.html">Registrate</a>
+    <a class="boton links"  href="../HTML/inicio.html">Inicio</a>
+    <a class="boton links" href="../HTML/quienes_somos.html">Quienes somos</a>
+    <a class="boton links" href="../HTML/nuestrosobjetivos.html">Nuestros Objetivos</a>
+    <a class="boton links" href="../HTML/puntosverdes.html">Puntos Verdes</a>
+    <a class="boton links" href="../HTML/Registrate.html">Registrate</a>
+	<a class="boton links" href="../HTML/recetas.html">Recetas</a>
+
 
     <a id="arriba"></a>
 </nav>
@@ -31,17 +33,15 @@ document.getElementById("idheader").innerHTML = header
 
 
 let footer = `
-<a href="mailto:reciclemosjuntos@mail.com" target="_blank"><img src="../IMG/gmail.png" alt="logo email" width="2%">
-        </a>
-        <a href="https://www.facebook.com" target="_blank"><img src="../IMG/facebook.png" alt="logo email" width="2%">
-        </a>
-        <a href="https://www.instagram.com" target="_blank"><img src="../IMG/instagram.png" alt="logo email" width="2%">
-        </a>
-        <a href="https://www.twitter.com" target="_blank"><img src="../IMG/gorjeo.png" alt="logo email" width="2%">
-        </a>
-        <br>
-        <p>Derechos reservados @2023</p>
-        <a href="#arriba">🔼</a>
+<div class"contenedor_footer>
+	<a class="icono_redes" href="mailto:reciclemosjuntos@mail.com" target="_blank"><img src="../IMG/gmail.png" alt="logo email" width="4%"></a>
+	<a class="icono_redes" href="https://www.facebook.com" target="_blank"><img src="../IMG/facebook.png" alt="logo email" width="4%"></a>
+	<a class="icono_redes" href="https://www.instagram.com" target="_blank"><img src="../IMG/instagram.png" alt="logo email" width="4%"></a>
+	<a class="icono_redes" href="https://www.twitter.com" target="_blank"><img src="../IMG/gorjeo.png" alt="logo email" width="4%"></a>
+	<br>
+	<p>Derechos reservados @2023</p>
+	<a href="#arriba">🔼</a>
+</div>
         
 `
 document.getElementById("idfooter").innerHTML = footer

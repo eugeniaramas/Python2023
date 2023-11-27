@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../IMG/recycle-sign.png" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/style2.1.css">
+    <link rel="stylesheet" href="../CSS/registrate.css">
     
     <title>MAR SIN PLASTICO</title>
 </head>
 
-<body>
-    <input type="checkbox" id="boton-modo">
-    <label for="boton-modo">Modo Oscuro</label>
+<body class="modo-oscuro">
+    <button id="modoOscuro">Cambiar Modo </button>
     
     <div class="contenedor">
         <header id="idheader" class="header">
@@ -35,34 +34,34 @@
                     <div class="formulario__grupo" id="grupo__usuario">
                     <label for="usuario" class="formulario_label">Usuario: *</label>
                     <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Juan123">
+                        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Ingrese el usuario">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 digitos y solo número, letras y guión bajo</p>
                     </div>
 
-                    <div class="formulario__grupo" id="grupo__nombre">
+                    <div class="formulario__grupo" id="grupo__nombre"> 
                     <label for="nombre" class="formulario_label">Nombre: *</label>
                     <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese el nombre">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 digitos y solo número, letras y guión bajo</p>
                     </div>
                     
-                    <div class="formulario__grupo" id="grupo__passaword">
-                        <label for="passaword" class="formulario_label">Contraseña: *</label>
+                    <div class="formulario__grupo" id="grupo__password">
+                        <label for="password" class="formulario_label">Contraseña: *</label>
                         <div class="formulario__grupo-input">
-                            <input type="password" class="formulario__input" name="passaword" id="passaword" placeholder="Juan">
+                            <input type="password" class="formulario__input" name="password" id="password">
                             <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             </div>
                             <p class="formulario__input-error">La contraseña tiene que ser de 4 a 16 digitos y solo número, letras y guión bajo</p>
                         </div>
 
-                        <div class="formulario__grupo" id="grupo__passaword2">
-                            <label for="passaword2" class="formulario_label">Repetir contraseña: *</label>
+                        <div class="formulario__grupo" id="grupo__password2">
+                            <label for="password2" class="formulario_label">Repetir contraseña: *</label>
                             <div class="formulario__grupo-input">
-                                <input type="password" class="formulario__input" name="passaword2" id="passaword2" placeholder="Juan">
+                                <input type="password" class="formulario__input" name="password2" id="password2">
                                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                 </div>
                                 <p class="formulario__input-error">Ambas contraseñas deben ser iguales</p>
@@ -71,35 +70,18 @@
                         <div class="formulario__grupo" id="grupo__correo">
                             <label for="correo" class="formulario__label">Correo Electronico</label>
                             <div class="formulario__grupo-input">
-                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="mariaemilia@correo.com">
                                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             </div>
                             <p class="formulario__input-error"> Ingrese un correo electrónico válido </p>
                             </div> 
 
-                     <!--
-                    <label for="fecnac">Fecha de nacimiento:</label>
-                    <input type="date" name="fecnac" id="fecnac">
-                    <label for="Barrio">Barrio: </label>
-                    <select name="Barrio" id="Barrio">
-                        <option value="1">Parque luro</option>
-                        <option value="2">Constitucion</option>
-                        <option value="3">La Perla</option>
-                        <option value="4">Las Dalias</option>
-                        <option value="5">Camet</option>
-                        <option value="6">El Faro</option> -->
-    
-                    </select>
+               </select>
                     <p>* Campos obligatorios</p>
                 </fieldset>
                 <fieldset>
                     <legend>Datos del contacto e intereses</legend>
-                   <!-- <label for="correo">E-mail: *</label>
-                    <input type="email" name="correo" id="correo" placeholder="mardelplastico@gmail.com" required> <br>
-                    <label for="tel">Celular: *</label>
-                    <input type="number" name="tel" id="tel" required>
-                    <br> -->
-                    <label for="intereses">Tengo interés en:</label>
+                     <label for="intereses">Tengo interés en:</label>
                      <br><br> <input type="checkbox" name="intereses" value="1">Ser voluntario
                     <br><br><input type="checkbox" name="intereses" value="2">Armado de ecobotellas
                     <br><br><input type="checkbox" name="intereses" value="3">Compostaje
@@ -143,7 +125,53 @@
         </main>
        
         
+        <aside class="sidebar">
+        
+            <h2>Artículos de interés</h2>
+            <br><br>
+        
+            <article>
+                <a href="">¿Cómo podemos reducir los residuos que generamos en nuestras casas?</a>
+                <p> Entender la importancia del cuidado de nuestros mares</p><br><br>
+                <img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+            </article>
+            <br><br>
+        
+            <article>
+                <a href="">Huella de Carbono. ¿De qué se trata?</a>
+                <p>Aprendamos a interpretar el indicador ambiental que refleja la emisión de gases del efecto invernadero por efecto directo o indirecto de un individuo u organización.</p>
+                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+              </article>
+            <br><br>
+            <article>
+                <a href="https://ongteprotejo.org/ar/articulos/ecobotellas-una-practica-eco-sustentable-desde-nuestro-hogar/">Ecobotellas</a><br>
+                <p>¿Qué son? ¿Para qué sirven? ¿Qué utilidad les puedo dar? <br> ¿De qué manera ayuda al medio ambiente?</p>
+                <br><img src="../IMG/la-contaminacion-del-agua (1).png" alt="la-contaminacion-del-agua">
+        
+            </article>
+        
+            <br><br>
+        
+            <article class="googlebooks">
+                <h4>Libro de consulta</h4>
+                 <br>
+                 <div id="viewerCanvas"  style = "width: 100%"  height="250px">
+                 </div>
+          
+                 <script type="text/javascript">
+                     google.books.load();
+                 
+                     function initialize() {
+                         var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+                         viewer.load('ISBN:9688382302');
+                     }
+                 
+                     google.books.setOnLoadCallback(initialize);
+                 </script>
+            
+            </article>
 
+        </aside>
        
         <footer id="idfooter" class="footer">
             <h3>pie</h3></footer>
