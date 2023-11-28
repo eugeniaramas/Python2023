@@ -4,18 +4,18 @@ const grande = document.querySelector('.grande')
 const punto = document.querySelectorAll ('.punto')
 
 //CUANDO CLICK en punto
-    //Saber la posicion de ese punto 
+    //Saber la posicion de ese punto
     //Aplicar un transform translatex al grande
     // QUITAR la clase activo de TODOS puntos
-    //Añadir la clase activo al punto que hemos hecho clik 
+    //Añadir la clase activo al punto que hemos hecho clik
 
 
-//recorrer TODOS los puntos    
+//recorrer TODOS los puntos
 punto.forEach( (cadaPunto , i )=> {
     //Asignamos un CLICK a cada punto
     punto[i].addEventListener('click', ()=>{
 
-        let posicion = i 
+        let posicion = i
         let operacion = posicion * -50
 
 

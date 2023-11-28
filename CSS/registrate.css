@@ -7,6 +7,8 @@ body{
     background: #e9ecf4;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1.5vw;
+    font-size: 2.4vh;
 }
 
 .contenedor {
@@ -283,10 +285,6 @@ body{
     grid-area: footer;
 
 } */
-
-
-
-
 .modo-oscuro {
     background-color: #333;
     color: #fff;
